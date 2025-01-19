@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, section, article, aside, footer {
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid #ddd;
+        }
+        header {
+            background: #f4f4f4;
+            text-align: center;
+        }
+        nav {
+            background: #ccc;
+        }
+        nav ul {
+            list-style: none; /* Remove default bullets */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            display: flex; /* Use flexbox to align items horizontally */
+            justify-content: center; /* Center the items horizontally */
+        }
+        nav ul li {
+            margin: 0 10px; /* Add spacing between the items */
+        }
+        nav ul li a {
+            text-decoration: none; /* Remove underline from links */
+            color: black; /* Set link color */
+            font-weight: bold; /* Optional: Make the text bold */
+        }
+        nav ul li a:hover {
+            color: #007BFF; /* Optional: Change color on hover */
+        }
+        section {
+            display: flex;
+        }
+        article {
+            flex: 3;
+        }
+        aside {
+            flex: 1;
+            background: #f9f9f9;
+        }
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#navigation">Navigation</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article id="home">
+            <h2>Home Page</h2>
+            <p></p>
+        </article>
+        <aside>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#navigation">Navigation Activities</a></li>
+                <li><a href="#blog">Blog Section</a></li>
+                <li><a href="#contact">Contact Form</a></li>
+            </ul>
+        </aside>
+    </section>
+    <section id="navigation">
+        <h2>Navigation Page</h2>
+        <p>1A, 1B, 1C</p>
+    </section>
+    <section id="blog">
+        <h2>Blog Page</h2>
+        <p>Here, you can add photos, videos, and hyperlinks to interesting topics.</p>
+        <p><a href="https://example.com">Visit our blog</a></p>
+    </section>
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+</body>
+</html>
