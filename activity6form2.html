@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form-2</h1>
+    
+    <form>
+
+        <fieldset>
+            <legend>Name</legend>
+            <label for="textbox">Enter your name:</label>
+            <input type="text" id="textbox" name="textbox" placeholder="Type something" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label>
+                <input type="radio" name="radioGroup" value="Male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="radioGroup" value="Female"> Female
+            </label>
+            <label>
+                <input type="radio" name="radioGroup" value="Prefer not to say"> Prefer not to say
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <label>
+                <input type="checkbox" name="checkboxGroup" value="checkbox1"> Reading
+            </label>
+            <label>
+                <input type="checkbox" name="checkboxGroup" value="checkbox2"> Sports
+            </label>
+            <label>
+                <input type="checkbox" name="checkboxGroup" value="checkbox3"> Travelling
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Place</legend>
+            <label for="selectbox">Choose your state:</label>
+            <select id="selectbox" name="selectbox" size="3" required>
+                <option value="item1">Delhi NCR</option>
+                <option value="item2">Tamil Nadu</option>
+                <option value="item3">Kerala</option>
+                <option value="item4">Karnatka</option>
+                <option value="item5">Bihar</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Age</legend>
+            <label for="optionbox">Select your age group:</label>
+            <select id="optionbox" name="optionbox">
+                <option value="value1">18-28</option>
+                <option value="value2">29-38</option>
+                <option value="value3">39-50</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comment Section</legend>
+            <label for="textarea">Write your comments:</label>
+            <textarea id="textarea" name="textarea" rows="4" cols="50" placeholder="Type here..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="example@example.com">
+        </fieldset>
+
+        <fieldset>
+            <legend>Browser</legend>
+            <label for="browsers">Choose a browser:</label>
+            <input list="browserOptions" id="browsers" name="browsers" placeholder="">
+            <datalist id="browserOptions">
+                <option value="Google Chrome">
+                <option value="Mozilla Firefox">
+                <option value="Microsoft Edge">
+                <option value="Safari">
+                <option value="Opera">
+            </datalist>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
